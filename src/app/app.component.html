@@ -1,0 +1,117 @@
+<div class="grid-container">
+  <div class="card no-expand-change">
+    <app-expanding-card class="selectable" [expanded]="card1Expanded" (click)="card1Expanded = !card1Expanded">
+      <app-expanding-card-preview>
+        <div class="card-preview">1</div>
+      </app-expanding-card-preview>
+      <app-expanding-card-content>
+        <div class="card1-content">
+          <div class="card1-grid">
+            <div class="card1-item">
+              <div class="square"></div>
+            </div>
+            <div class="card1-item">
+              <div class="square"></div>
+            </div>
+            <div class="card1-item">
+              <div class="square"></div>
+            </div>
+            <div class="card1-item">
+              <div class="square selected"></div>
+            </div>
+            <div class="card1-item">
+              <div class="square"></div>
+            </div>
+            <div class="card1-item">
+              <div class="square"></div>
+            </div>
+          </div>
+        </div>
+      </app-expanding-card-content>
+    </app-expanding-card>
+  </div>
+
+  <div class="card">
+    <app-expanding-card class="selectable" [expanded]="card2Expanded" (click)="card2Expanded = !card2Expanded">
+      <app-expanding-card-preview>
+        <div class="card-preview">2</div>
+      </app-expanding-card-preview>
+      <app-expanding-card-content>
+        <div class="card2-content">
+          <div class="card2-item"></div>
+          <div class="card2-item"></div>
+          <div class="card2-item"></div>
+          <div class="card2-item"></div>
+        </div>
+      </app-expanding-card-content>
+    </app-expanding-card>
+  </div>
+
+  <div class="card no-expand-change">
+    <app-expanding-card class="selectable" [expanded]="card3Expanded" (click)="card3Expanded = !card3Expanded">
+      <app-expanding-card-preview>
+        <div class="card-preview">3</div>
+      </app-expanding-card-preview>
+      <app-expanding-card-content>
+        <div class="card3-content">
+          <div class="card3-item"></div>
+          <div class="card3-item"></div>
+          <div class="card3-item"></div>
+          <div class="card3-item"></div>
+          <div class="card3-item"></div>
+          <div class="card3-item"></div>
+        </div>
+      </app-expanding-card-content>
+    </app-expanding-card>
+  </div>
+
+  <div class="card">
+    <app-expanding-card class="selectable" [expanded]="card4Expanded" (click)="card4Expanded = !card4Expanded">
+      <app-expanding-card-preview>
+        <div class="card-preview">4</div>
+      </app-expanding-card-preview>
+      <app-expanding-card-content>
+        <div class="card4-content">
+          <div class="card4-item">
+            The quick brown fox jumps over the lazy dog
+          </div>
+          <div class="card4-item">
+            The quick brown fox jumps over the lazy dog
+          </div>
+          <div class="card4-item">
+            The quick brown fox jumps over the lazy dog
+          </div>
+          <div class="card4-item">
+            The quick brown fox jumps over the lazy dog
+          </div>
+        </div>
+      </app-expanding-card-content>
+    </app-expanding-card>
+  </div>
+
+  <div class="card no-expand-change">
+    <app-expanding-card class="selectable" [expanded]="card5Expanded" (click)="card5Expanded = !card5Expanded">
+      <app-expanding-card-preview>
+        <div class="card-preview">5</div>
+      </app-expanding-card-preview>
+      <app-expanding-card-content>
+        <div class="card5-content">
+          <div class="card5-header">
+            <div class="circle-container">
+              <div class="circle"></div>
+            </div>
+            <div class="rectangle top"></div>
+            <div class="rectangle bottom"></div>
+          </div>
+          <div class="card5-text">
+            <p class="large">The quick brown fox jumps over the lazy dog</p>
+            <p class="medium">The quick brown fox jumps over the lazy dog</p>
+            <p class="small">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <button class="card5-button">CANCEL</button>
+          <button class="card5-button filled">CONFIRM</button>
+        </div>
+      </app-expanding-card-content>
+    </app-expanding-card>
+  </div>
+</div>

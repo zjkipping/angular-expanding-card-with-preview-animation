@@ -1,0 +1,40 @@
+/* Add application styles & imports to this file! */
+
+.expanding-card {
+  width: 250px;
+  height: 100%;
+  transition: width 0.5s;
+  display: grid;
+  overflow-x: hidden;
+
+  &.expanded {
+    width: 600px;
+  }
+}
+
+.grid-container {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 50px;
+  align-items: center;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.card {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  height: 500px;
+
+  &.no-expand-change {
+    .expanding-card {
+      width: 250px;
+      &.expanded {
+        width: 250px;
+      }
+    }
+  }
+}
